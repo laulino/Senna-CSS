@@ -82,3 +82,46 @@ div > img {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+
+/* Seletor de atributo: aplica o estilo a qualquer <input> cujo atributo
+   "type" seja "email" ou "password", sem precisar de classes extras no HTML */
+input[type="email"],
+input[type="password"] {
+  background-color: var(--bg1);
+  color: var(--texto);
+  border: 1px solid var(--titulo2);
+  border-radius: 5px;
+  padding: 8px;
+  font-family: var(--font-corpo);
+}
+
+/* Seletor de atributo: estiliza apenas os botões de envio do formulário */
+input[type="submit"] {
+  background-color: var(--amarelo1);
+  color: var(--bg1);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--font-titulos);
+}
+/* Pseudo-classe: dando efeito visual ao passar o mouse sobre o botão */
+input[type="submit"]:hover {
+  background-color: var(--titulo2);
+  color: white;
+}
+
+/* Pseudo-elemento ::placeholder: estiliza o texto de exemplo que aparece
+   dentro dos campos antes do usuário digitar algo */
+input::placeholder,
+textarea::placeholder {
+  color: var(--texto);
+  font-style: italic;
+  opacity: 0.7;
+}
+
+/* Pseudo-elemento ::before: insere um ícone decorativo antes do título
+   "Inscreva-se", sem precisar alterar o HTML */
+.form::before {
+  content: "🏁 ";
+}
