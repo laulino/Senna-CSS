@@ -1,1 +1,84 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&display=swap');
+/*importação das fontes do Google Fonts para títulos e corpo de texto*/
+
+:root { /* Definição de variáveis CSS para cores e fontes */
+  --bg1: #0F1115;      
+  --bg2: #1C1F26;    
+  --amarelo1: #FFC800;   
+  --titulo2: #00ac48;      
+  --texto: #A0A5B5;      
+  
+  --font-titulos: 'Black Ops One', cursive;
+  --font-corpo: 'Doppio One', sans-serif;
+}
+*{/* Configura geral da página */
+  margin: 10px;/*margem em todos os elementos*/
+}
+body{
+  background-color: var(--bg1);/*cor de fundo da página*/
+  color: var(--texto);/*cor do texto*/
+  font-family: var(--font-corpo);/*tipo de fonte*/
+  font-size: 18px;/*tamanho da fonte*/
+}
+nav {/*menu de navegação */
+  background-color: var(--bg2);
+}
+h1{
+  color: var(--amarelo1);
+  font-family: var(--font-titulos);
+  font-size: 100px;
+  text-align: center;
+}
+h2 {
+    color: var(--amarelo1);
+    font-family: var(--font-titulos);
+    font-size: 40px;
+    text-align: center;
+}
+h3 {
+    color: var(--titulo2);
+    font-family: var(--font-corpo);
+    font-size: 30px;
+}
+/*cor da fonte e alinhamento do texto*/
+.atalho {
+  color: var(--titulo2);
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* Seletor de elemento + pseudo-classe */
+.atalho > a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.atalho > a:hover{
+    background-color: rgb(112, 15, 31);
+}/* Seletor de elemento + pseudo-classe */
+
+a {/* Seletor de elemento para links */
+    color: var(--amarelo1);
+}
+div {
+  padding: 20px;
+  margin: 20px;
+}
+div > img {
+  display: block;
+  margin: 20px auto;
+}
+.imagens {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+#introducao {
+  background-color: var(--bg2);
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
