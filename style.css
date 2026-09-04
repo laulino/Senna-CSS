@@ -83,7 +83,9 @@ div > img {
 /* Seletor de atributo: aplica o estilo a qualquer <input> cujo atributo
    "type" seja "email" ou "password", sem precisar de classes extras no HTML */
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+textarea,
+select {
   background-color: var(--bg1);
   color: var(--texto);
   border: 1px solid var(--titulo2);
@@ -92,6 +94,15 @@ input[type="password"] {
   font-family: 'Doppio One', sans-serif;
 }
 
+textarea {
+  width: 450px;
+  height: 120px;
+  resize: vertical;
+}
+
+select {
+  cursor: pointer;
+}
 /* Seletor de atributo: estiliza apenas os botões de envio do formulário */
 input[type="submit"] {
   background-color: var(--amarelo1);
