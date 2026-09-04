@@ -9,9 +9,6 @@
   --amarelo1: #FFC800;   
   --titulo2: #00ac48;      
   --texto: #A0A5B5;      
-  
-  --font-titulos: 'Black Ops One', cursive;
-  --font-corpo: 'Doppio One', sans-serif;
 }
 *{/* Configura geral da página */
   margin: 10px;/*margem em todos os elementos*/
@@ -19,7 +16,7 @@
 body{
   background-color: var(--bg1);/*cor de fundo da página*/
   color: var(--texto);/*cor do texto*/
-  font-family: var(--font-corpo);/*tipo de fonte*/
+  font-family: 'Doppio One', sans-serif;/*tipo de fonte*/
   font-size: 18px;/*tamanho da fonte*/
 }
 nav {/*menu de navegação */
@@ -27,19 +24,19 @@ nav {/*menu de navegação */
 }
 h1{
   color: var(--amarelo1);
-  font-family: var(--font-titulos);
+  font-family: 'Black Ops One', cursive;
   font-size: 100px;
   text-align: center;
 }
 h2 {
     color: var(--amarelo1);
-    font-family: var(--font-titulos);
+    font-family: 'Black Ops One', cursive;
     font-size: 40px;
     text-align: center;
 }
 h3 {
     color: var(--titulo2);
-    font-family: var(--font-corpo);
+    font-family: 'Doppio One', sans-serif;
     font-size: 30px;
 }
 /*cor da fonte e alinhamento do texto*/
@@ -92,7 +89,7 @@ input[type="password"] {
   border: 1px solid var(--titulo2);
   border-radius: 5px;
   padding: 8px;
-  font-family: var(--font-corpo);
+  font-family: 'Doppio One', sans-serif;
 }
 
 /* Seletor de atributo: estiliza apenas os botões de envio do formulário */
@@ -103,7 +100,7 @@ input[type="submit"] {
   padding: 10px 25px;
   border-radius: 5px;
   cursor: pointer;
-  font-family: var(--font-titulos);
+  font-family: 'Black Ops One', cursive;
 }
 /* Pseudo-classe: dando efeito visual ao passar o mouse sobre o botão */
 input[type="submit"]:hover {
